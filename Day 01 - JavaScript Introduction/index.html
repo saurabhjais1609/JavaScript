@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+</head>
+<body>
+    <h1>Introduction to JavaScript</h1>
+    <h2>JavaScript is a versatile, dynamically typed programming language that brings life to web pages by making them interactive.</h2>
+    <div id="name"></div>
+    <script>
+        console.log("Hello World!");
+        
+        // JS Program to print your name
+        // alert() method is used when you want to show the output in the form of a pop-up. 
+        // console.log() method is used when you want to output the information to the browser console for debugging or logging. 
+        // document.write() method is used when you want to directly write some content to the HTML document.
+        // document.getElementById() method is used when you want to update the content of an HTML element with a specific ID. 
+
+        // prompt() method displays a dialog box that prompts the user for input.
+        // prompt() method returns the input value if the user clicks "OK", otherwise it returns null.
+
+        let userName = prompt("Please enter your name:");
+        alert("Your name is: " + userName);
+        console.log("Your name is: " + userName);
+        document.write("Your name is: " + userName);
+        document.getElementById("name").innerHTML = "Your name is: " + userName;
+    </script>
+</body>
+</html>
